@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    border: 1px solid black;
+    /* padding: 32px; */
+    height: 28%;
+}
+
+.main h2 {
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 24%;
+    font-size: 32px;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding: 12px 24px;
+    height: 76%;
+    background-color: aqua;
+}
+
+.container--dial p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.content {
+   display: flex;
+   justify-content: center
+   
+}
+
+.content input , button {
+    height: 32px;
+}
+
+.content button {
+    width: 66px;
+    background-color: rgb(97, 252, 174);
+    cursor: pointer;
+}
