@@ -1,18 +1,17 @@
-let stringOne = "abc";
-let stringTwo = "123";
-
-let arr1 = stringOne.split("");
-let arr2 = stringTwo.split("");
-
-console.log(arr1);
-console.log(arr2);
-
-let newarr = [];
-
-for (j in arr2) {
-    for (i in arr1) {
-        console.log(j);
-        console.log(i)
+let stringOne = prompt('Nhập vào chuỗi 1');
+let stringTwo = prompt('Nhập vào chuỗi 2');
+let arrOne = [...stringOne];
+let newStr = [];
+let arrTwo = [...stringTwo];
+let maxLength = Math.max(arrOne.length, arrTwo.length);
+for (let i = 0; i < maxLength; i++) {
+    newStr.push(arrOne[i]);
+    newStr.push(arrTwo[i]);
+}
+for (let i = 0; i < newStr.length; i++) {
+    if (newStr[i] == undefined) {
+        newStr.splice(i, 1);
     }
 }
-console.log(newarr)
+let resultStr = newStr.join('');
+alert("Chuỗi cần tìm là :" + resultStr);
